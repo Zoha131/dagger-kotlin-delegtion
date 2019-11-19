@@ -30,6 +30,7 @@ interface ActivityComponent {
     fun getClient(): PrefClient
 }
 
+//todo here kotlin class delegation giving me error
 class PrefClient @Inject constructor(pref: SharedPreferences): SharedPreferences by pref{
 
 }
